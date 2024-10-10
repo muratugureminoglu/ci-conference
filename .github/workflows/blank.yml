@@ -27,6 +27,6 @@ jobs:
     - name: MD5 file checksum
       run: |
         echo $LATEST_SNAPSHOT
-        remote_file_md5=$(curl -sL https://oss.sonatype.org/service/local/artifact/maven/redirect?r=snapshots&g=io.antmedia.webrtc&a=ConferenceCall&v=${LATEST_SNAPSHOT}&e=war.md5)
+        remote_file_md5=$(curl -sL https://oss.sonatype.org/service/local/artifact/maven/redirect?r=snapshots&g=io.antmedia.webrtc&a=ConferenceCall&v=2.12.0-SNAPSHOT&e=war.md5)
         echo "Remote MD5: $remote_file_md5"
 
